@@ -15,6 +15,28 @@ The convention is to use a suffix to each module to indicate that it's for using
 
 It can contain also another utilities directly involved with reports (like merge/split utils, checkers, signing tools and so on).
 
+[//]: # (addons)
+Available addons
+----------------
+addon | version | summary
+--- | --- | ---
+[bi_view_editor](bi_view_editor/) | 8.0.1.0.0 | Graphical BI views builder for Odoo 8
+[report_custom_filename](report_custom_filename/) | 8.0.1.0.0 | Configure the filename to use when downloading a report
+[report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 8.0.1.0.0 | Report Qweb Element Page Visibility
+[report_qweb_signer](report_qweb_signer/) | 8.0.1.0.0 | Sign Qweb PDFs usign a PKCS#12 certificate
+[report_xls](report_xls/) | 8.0.0.6.1 | Excel report engine
+[report_xlsx](report_xlsx/) | 8.0.1.0.0 | Base module to create xlsx report
+[report_xml](report_xml/) | 1.0 | Allow to generate XML reports
+[report_xml_sample](report_xml_sample/) | 1.0 | For developers who want an example
+
+Unported addons
+---------------
+addon | version | summary
+--- | --- | ---
+[base_report_assembler](base_report_assembler/) | 1.0 (unported) | Base Report Assembler
+
+[//]: # (end addons)
+
 ----
 
 OCA, or the Odoo Community Association, is a nonprofit organization whose 
