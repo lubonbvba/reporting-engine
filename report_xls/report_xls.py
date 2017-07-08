@@ -52,6 +52,7 @@ try:
 except ImportError:  # pragma: no cover
     _logger.debug("Cannot import xlwt. This module will not be functional.")
     xls_types = xls_types_default
+    default_style = None
 
 
 class AttrDict(dict):
@@ -207,7 +208,7 @@ class report_xls(report_sxw):
                         c.append({'formula': s[5]})
                     else:
                         c.append({
-                            'write_cell_func': report_xls.xls_types[c[3]]})
+                            'write_cell_func': xls_types[c[3]]})
                     # Set custom cell style
                     if s_len > 6 and s[6] is not None:
                         c.append(s[6])
@@ -236,7 +237,7 @@ class report_xls(report_sxw):
             style = spec[6] and spec[6] or row_style
             if not data:
                 # if no data, use default values
-                data = report_xls.xls_types_default[spec[3]]
+                data = xls_types_default[spec[3]]
             if size != 1:
                 if formula:
                     ws.write_merge(
